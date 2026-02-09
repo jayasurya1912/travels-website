@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Banner</title>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet">
@@ -120,6 +120,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
+  <a href="" class="navbar-brand d-lg-none">
+  <img src="images/main.png" width="90" alt="Logo">
+</a>
 </nav>
 
 
@@ -180,7 +183,7 @@
 
 
 
-<section class="uh-service-wrapper">
+<section class="uh-service-wrapper" data-aos="zoom-in">
   <div class="container">
     <div class="row align-items-center g-5">
 
@@ -268,7 +271,7 @@
     <div class="row g-4">
 
       <!-- CARD 1 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="uh-svc-card">
           <div class="uh-svc-icon">
             <i class="bi bi-airplane"></i>
@@ -281,7 +284,7 @@
       </div>
 
       <!-- CARD 2 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="uh-svc-card">
           <div class="uh-svc-icon">
             <i class="bi bi-briefcase"></i>
@@ -294,7 +297,7 @@
       </div>
 
       <!-- CARD 3 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="uh-svc-card">
           <div class="uh-svc-icon">
             <i class="bi bi-map"></i>
@@ -307,7 +310,7 @@
       </div>
 
       <!-- CARD 4 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="uh-svc-card">
           <div class="uh-svc-icon">
             <i class="bi bi-geo-alt"></i>
@@ -320,7 +323,7 @@
       </div>
 
       <!-- CARD 5 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="uh-svc-card">
           <div class="uh-svc-icon">
             <i class="bi bi-shield-check"></i>
@@ -333,7 +336,7 @@
       </div>
 
       <!-- CARD 6 -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="uh-svc-card">
           <div class="uh-svc-icon">
             <i class="bi bi-headset"></i>
@@ -363,62 +366,76 @@
 
     <!-- FORM -->
     <div class="uh-form-box">
-      <form>
+     <form id="uhContactForm">
 
-        <div class="row g-4">
+  <div class="row g-4">
 
-          <div class="col-md-6">
-            <input
-              type="text"
-              class="uh-form-input"
-              placeholder="Full Name"
-              required
-            >
-          </div>
+    <div class="col-md-6">
+      <input
+        type="text"
+        class="uh-form-input"
+        id="uhFullName"
+        name="fullName"
+        placeholder="Full Name"
+        required
+      >
+    </div>
 
-          <div class="col-md-6">
-            <input
-              type="tel"
-              class="uh-form-input"
-              placeholder="Phone Number"
-              required
-            >
-          </div>
+    <div class="col-md-6">
+      <input
+        type="tel"
+        class="uh-form-input"
+        id="uhPhone"
+        name="phone"
+        placeholder="Phone Number"
+        required
+      >
+    </div>
 
-          <div class="col-md-6">
-            <input
-              type="email"
-              class="uh-form-input"
-              placeholder="Email Address"
-            >
-          </div>
+    <div class="col-md-6">
+      <input
+        type="email"
+        class="uh-form-input"
+        id="uhEmail"
+        name="email"
+        placeholder="Email Address"
+      >
+    </div>
 
-          <div class="col-md-6">
-            <select class="uh-form-input">
-              <option selected>Select Service</option>
-              <option>Airport Transfer</option>
-              <option>Corporate Travel</option>
-              <option>Outstation Cab</option>
-              <option>Local City Ride</option>
-            </select>
-          </div>
+    <div class="col-md-6">
+      <select
+        class="uh-form-input"
+        id="uhService"
+        name="service"
+        required
+      >
+        <option value="">Select Service</option>
+        <option>Airport Transfer</option>
+        <option>Corporate Travel</option>
+        <option>Outstation Cab</option>
+        <option>Local City Ride</option>
+      </select>
+    </div>
 
-          <div class="col-12">
-            <textarea
-              class="uh-form-textarea"
-              placeholder="Message / Travel Details"
-            ></textarea>
-          </div>
+    <div class="col-12">
+      <textarea
+        class="uh-form-textarea"
+        id="uhMessage"
+        name="message"
+        placeholder="Message / Travel Details"
+      ></textarea>
+    </div>
 
-          <div class="col-12 text-center">
-            <button type="submit" class="uh-form-btn">
-              Submit Enquiry
-            </button>
-          </div>
+    <div class="col-12 text-center">
+      <button type="submit" class="uh-form-btn">
+        Submit Enquiry
+      </button>
+    </div>
 
-        </div>
+  </div>
 
-      </form>
+</form>
+
     </div>
 
   </div>
@@ -566,7 +583,55 @@
 </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
 
+    // ✅ Init EmailJS v4
+    emailjs.init({
+      publicKey: "FCbZsU1EoxyGm_s0y", // your public key
+    });
 
+    const form = document.getElementById("uhContactForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const templateParams = {
+        fullName: document.getElementById("uhFullName").value,
+        phone: document.getElementById("uhPhone").value,
+        email: document.getElementById("uhEmail").value,
+        service: document.getElementById("uhService").value,
+        message: document.getElementById("uhMessage").value,
+      };
+
+      emailjs
+        .send(
+          "service_txfcy3l",      // Service ID
+          "template_r2i2afe",     // Template ID
+          templateParams
+        )
+        .then(
+          function () {
+            alert("Thank you! Your enquiry has been sent.");
+            form.reset();
+          },
+          function (error) {
+            console.error("EmailJS Error:", error);
+            alert("Failed to send enquiry. Please try again.");
+          }
+        );
+    });
+
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

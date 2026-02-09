@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Banner</title>
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet">
@@ -117,6 +117,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
+   <a href="" class="navbar-brand d-lg-none">
+  <img src="images/main.png" width="90" alt="Logo">
+</a>
 </nav>
 
 
@@ -151,7 +154,7 @@
 </section>
 
 
-  <section class="about-section py-5">
+  <section class="about-section py-5" data-aos="zoom-out">
   <div class="container">
     <div class="row align-items-center">
 
@@ -192,7 +195,7 @@
 
 
 
-<section class="uh2-who-wrapper">
+<section class="uh2-who-wrapper" data-aos="fade-down"> 
   <div class="container">
     <div class="uh2-who-panel">
 
@@ -228,7 +231,7 @@
     </div>
   </div>
 </section>
-<section class="uh-vmc3-wrapper">
+<section class="uh-vmc3-wrapper" data-aos="zoom-in">
   <div class="container">
 
     <!-- HEADER -->
@@ -307,7 +310,7 @@
     <div class="uh-faq-list">
 
       <!-- ITEM 1 -->
-      <div class="uh-faq-item">
+      <div class="uh-faq-item" data-aos="fade-down">
         <button class="uh-faq-question" type="button">
           How do I book a cab with 7Horses?
           <span class="uh-faq-icon">+</span>
@@ -319,7 +322,7 @@
       </div>
 
       <!-- ITEM 2 -->
-      <div class="uh-faq-item">
+      <div class="uh-faq-item" data-aos="fade-down">
         <button class="uh-faq-question" type="button">
           Are your drivers verified and licensed?
           <span class="uh-faq-icon">+</span>
@@ -331,7 +334,7 @@
       </div>
 
       <!-- ITEM 3 -->
-      <div class="uh-faq-item">
+      <div class="uh-faq-item" data-aos="fade-down">
         <button class="uh-faq-question" type="button">
           Do you provide 24×7 airport transfer services?
           <span class="uh-faq-icon">+</span>
@@ -343,7 +346,7 @@
       </div>
 
       <!-- ITEM 4 -->
-      <div class="uh-faq-item">
+      <div class="uh-faq-item" data-aos="fade-down">
         <button class="uh-faq-question" type="button">
           Is pricing transparent with no hidden charges?
           <span class="uh-faq-icon">+</span>
@@ -355,7 +358,7 @@
       </div>
 
       <!-- ITEM 5 -->
-      <div class="uh-faq-item">
+      <div class="uh-faq-item" data-aos="fade-down">
         <button class="uh-faq-question" type="button">
           Do you offer outstation and corporate travel?
           <span class="uh-faq-icon">+</span>
@@ -520,6 +523,10 @@
     const preloader = document.getElementById("uhPreloaderV2");
     preloader.classList.add("hide");
   });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>

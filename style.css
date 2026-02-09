@@ -1660,10 +1660,7 @@ textarea.form-control {
 }
 
 @media (max-width: 576px) {
-  .uh-banner-wrapper {
-    min-height: auto;
-    padding: 110px 0;
-  }
+  
 
   .uh-banner-title {
     font-size: 2rem;
