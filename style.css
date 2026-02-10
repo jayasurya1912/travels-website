@@ -448,6 +448,7 @@
   gap: 25px;
   width: max-content;
   animation: marqueeAlt 25s linear infinite;
+  margin-top: 15px;
 }
 
 /* CARD STYLE */
