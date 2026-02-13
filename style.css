@@ -108,6 +108,7 @@
   .social-icons {
     display: none !important;
   }
+  
 
   /* Smaller text */
   .top-bar span,
@@ -117,6 +118,16 @@
   }
 }
 
+/* ===== HIDE TOP BAR ON MOBILE ===== */
+@media (max-width: 767px) {
+  .top-item {
+    display: none !important;
+  }
+  .top-bar
+  {
+    padding: 20px;
+  }
+}
 
     /* HERO BANNER */
    .hero-banner {
@@ -160,6 +171,10 @@
   position: relative;
   z-index: 999;
 }
+.dropdown-item
+{
+  font-weight: 600;
+}
 
 .navbar-brand img {
   max-width: 120px;
@@ -184,6 +199,7 @@
   min-width: 220px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   animation: fadeDown 0.25s ease;
+  
 }
 
 .dropdown-item:hover {
@@ -2861,4 +2877,17 @@ textarea.form-control {
   .uh-contact-row i {
     font-size: 16px;
   }
+}
+.mobile-contact a {
+  text-decoration: none;
+  color: #0B1D3A;
+  font-size: 15px;
+}
+
+.mobile-contact a:hover {
+  color: #0d6efd;
+}
+
+.mobile-contact i {
+  font-size: 16px;
 }
