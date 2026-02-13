@@ -2783,3 +2783,82 @@ textarea.form-control {
     font-size: 13px;
   }
 }
+/* Card Container */
+.uh-contact-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.uh-contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.uh-contact-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Grid */
+.uh-contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Row */
+.uh-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Icon */
+.uh-contact-row i {
+  font-size: 18px;
+  color: #0f2027;
+  min-width: 20px;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .uh-contact-card {
+    padding: 18px;
+  }
+
+  .uh-contact-row {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .uh-contact-card {
+    text-align: left;
+    padding: 16px;
+  }
+
+  .uh-contact-title {
+    font-size: 13px;
+  }
+
+  .uh-contact-row {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .uh-contact-row i {
+    font-size: 16px;
+  }
+}
