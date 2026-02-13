@@ -38,32 +38,38 @@
 </div>
 
     <!-- ================= TOP BAR START ================= -->
+<!-- ===== TOP BAR START ===== -->
 <section class="top-bar">
   <div class="container-fluid">
     <div class="row align-items-center">
 
-      <!-- LEFT : LOGO -->
-      
-
-      <!-- CENTER : CALL | WHATSAPP | EMAIL -->
-      <div class="col-lg-8 col-md-12">
+      <!-- CENTER : CONTACT INFO -->
+      <div class="col-lg-10 col-md-12">
         <div class="contact-center d-flex justify-content-center align-items-center flex-wrap">
 
           <div class="top-item call">
             <i class="fa-solid fa-phone"></i>
             <span>Call</span>
-            <strong>+91 9543863532</strong>
+            <strong>
+              <a href="tel:+919543863532">+91 9543863532</a>
+            </strong>
           </div>
 
           <div class="top-item whatsapp">
             <i class="fa-brands fa-whatsapp"></i>
             <span>WhatsApp</span>
-            <strong>+91 9840033004</strong>
+            <strong>
+              <a href="https://wa.me/919840033004" target="_blank">
+                +91 9840033004
+              </a>
+            </strong>
           </div>
 
           <div class="top-item email">
             <i class="fa-solid fa-envelope"></i>
-            <span>7horsestravels@gmail.com</span>
+            <a href="mailto:7horsestravels@gmail.com">
+              7horsestravels@gmail.com
+            </a>
           </div>
 
         </div>
@@ -71,8 +77,8 @@
 
       <!-- RIGHT : SOCIAL ICONS -->
       <div class="col-lg-2 col-md-12 text-lg-end text-center social-icons">
-        <a href="https://www.facebook.com/share/18HyXe6Qe2/"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/sevenhorsestoursandtravels?igsh=MTBjcm4yaTdkNXIwbw=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
@@ -80,96 +86,126 @@
     </div>
   </div>
 </section>
+<!-- ===== TOP BAR END ===== -->
+
 
 
 <!-- ================= NAVBAR START ================= -->
  <nav class="navbar navbar-expand-lg main-navbar">
   <div class="container">
 
-    <!-- Mobile Toggle -->
-    
-
     <!-- Logo -->
-    
+    <a href="index.html" class="navbar-brand">
+      <img src="images/main.png" width="90" alt="Logo">
+    </a>
 
-    <!-- Desktop Menu -->
-    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between">
-      <a href="" class="navbar-brand">
-        <img src="images/main.png" width="90px" alt="">
-      </a>
-
-      <!-- Center Menu -->
-      <ul class="navbar-nav align-items-center mx-auto">
-        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-
-      <!-- Contact Info (Right) -->
-      
-
-    </div>
-
-   <a href="" class="navbar-brand d-lg-none">
-  <img src="images/main.png" width="90" alt="Logo">
-</a>
-
-
+    <!-- Mobile Toggle -->
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="offcanvas"
-      data-bs-target="#mobileMenu"
-    >
+      data-bs-target="#mobileMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+
+      <ul class="navbar-nav align-items-center">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- Desktop Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="carrental.html">Car Rental</a></li>
+            <li><a class="dropdown-item" href="vanrental.html">Van Rental</a></li>
+            <li><a class="dropdown-item" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="dropdown-item" href="busrental.html">Bus Rental</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="packagetours.html">Package Tour</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="tariff.html">Tariff</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+
   </div>
 </nav>
 
 
-<!-- Mobile Sidebar -->
+<!-- ================= NAVBAR START ================= -->
+<!-- ================= MOBILE SIDEBAR ================= -->
 <div class="offcanvas offcanvas-start" id="mobileMenu">
-    <a href="" class="navbar-brand">
-        <img src="images/main.png" width="90px" alt="">
-      </a>
   <div class="offcanvas-header">
     <h5>7Horses</h5>
     <button class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
+
   <div class="offcanvas-body">
-     <ul class="navbar-nav">
+    <ul class="navbar-nav">
+
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+      <!-- Mobile Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link d-flex justify-content-between align-items-center"
+           data-bs-toggle="collapse"
+           href="#mobileServicesMenu">
+          Services
+          <span class="bi bi-chevron-down"></span>
+        </a>
+
+        <div class="collapse ps-3" id="mobileServicesMenu">
+          <ul class="list-unstyled">
+            <li><a class="nav-link" href="carrental.html">Car Rental</a></li>
+            <li><a class="nav-link" href="vanrental.html">Van Rental</a></li>
+            <li><a class="nav-link" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="nav-link" href="busrental.html">Bus Rental</a></li>
+          </ul>
+        </div>
+      </li>
+
       <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="packagetours.html">Package Tour</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Packages</a></li>
+      <li class="nav-item"><a class="nav-link" href="tariff">Tariff</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
     </ul>
   </div>
 </div>
 
 
   <!-- HERO / BANNER SECTION -->
-  <section class="hero-banner">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-md-10 col-sm-12">
+<section class="hero-banner">
+  <div class="container-fluid px-0">
+    <div class="row justify-content-center m-0">
+      <div class="col-lg-8 col-md-10 col-sm-12 text-center px-3">
 
-         <h1 class="hero-title" id="typingText"></h1>
+        <h1 class="hero-title" id="typingText"></h1>
 
+        <p class="hero-subtitle">
+          We ensure safe rides, courteous drivers, and hassle-free bookings for every trip.
+        </p>
 
-          <p class="hero-subtitle">
-           We ensure safe rides, courteous drivers, and hassle-free bookings for every trip.
-          </p>
+        <a href="about.html" class="btn hero-btn animated-btn">Get Started</a>
 
-         <a href="about.html" class="btn hero-btn animated-btn">Get Started</a>
-
-
-        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
 
  <section class="marquee-alt-section">
@@ -529,13 +565,13 @@
   </div>
 </section>
 
-<section class="gallery-section py-5">
+<section class="gallery-section py-5" style="background-color: white;">
   <div class="container">
 
     <!-- HEADER -->
     <div class="text-center mb-5">
-      <h2 class="gallery-title">Our Gallery</h2>
-      <p class="gallery-subtitle">
+      <h2 class="gallery-title text-black" >Our Gallery</h2>
+      <p class="gallery-subtitle text-black">
         Moments from our journeys and happy customers
       </p>
     </div>
@@ -558,13 +594,13 @@
 
       <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="gallery-item">
-          <img src="images/suv.jpg" alt="Gallery">
+          <img src="images/glanza.jpg" alt="Gallery">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="gallery-item">
-          <img src="images/galone.jpg" alt="Gallery">
+          <img src="images/swift.avif" alt="Gallery">
         </div>
       </div>
 
@@ -582,37 +618,37 @@
 
       <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
         <div class="gallery-item">
+          <img src="images/gallone.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/galtwo.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/gallthree.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/gallfour.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/gallfive.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
           <img src="images/galfour.jpg" alt="Gallery">
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
-        <div class="gallery-item">
-          <img src="images/galfive.webp" alt="Gallery">
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
-        <div class="gallery-item">
-          <img src="images/galsix.jpg" alt="Gallery">
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
-        <div class="gallery-item">
-          <img src="images/galseven.webp" alt="Gallery">
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
-        <div class="gallery-item">
-          <img src="images/galeight.jpg" alt="Gallery">
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
-        <div class="gallery-item">
-          <img src="images/galnine.webp" alt="Gallery">
         </div>
       </div>
 
@@ -679,10 +715,10 @@
                     required
                 >
                     <option value="">Select Service</option>
-                    <option>Airport Transfer</option>
-                    <option>Corporate Car Rental</option>
-                    <option>Outstation Cab</option>
-                    <option>Local City Cab</option>
+                   <option>Car Rental</option>
+                  <option>Bus Rental</option>
+                  <option>Van Rental</option>
+                  <option>Luxury Rental</option>
                 </select>
                 </div>
 
@@ -777,10 +813,10 @@
       <div class="col-lg-3 col-md-6">
         <h5 class="footer-title">Our Services</h5>
         <ul class="footer-links">
-          <li><a href="#">Airport Transfers</a></li>
-          <li><a href="#">Corporate Car Rental</a></li>
-          <li><a href="#">Outstation Cabs</a></li>
-          <li><a href="#">Local City Cab</a></li>
+          <li><a href="carrental.html">Car Rental</a></li>
+          <li><a href="vanrental.html">Van Rental</a></li>
+          <li><a href="busrental.html">Bus Rental</a></li>
+          <li><a href="luxurycar.html">Luxury Car Rental</a></li>
         </ul>
       </div>
 

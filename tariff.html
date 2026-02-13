@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tariff</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+    <div class="uh-preloader-v2" id="uhPreloaderV2">
+  <div class="uh-preloader-inner">
+
+    <div class="uh-road-line"></div>
+
+    <h1 class="uh-preloader-brand">
+      7 <span>Horses</span>
+    </h1>
+
+    <p class="uh-preloader-sub">
+      Premium Cab Services
+    </p>
+
+  </div>
+</div>
+
+
+    <!-- ================= TOP BAR START ================= -->
+<section class="top-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <!-- LEFT : LOGO -->
+      
+
+      <!-- CENTER : CALL | WHATSAPP | EMAIL -->
+      <div class="col-lg-8 col-md-12">
+        <div class="contact-center d-flex justify-content-center align-items-center flex-wrap">
+
+          <div class="top-item call">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call</span>
+            <strong>+91 9543863532</strong>
+          </div>
+
+          <div class="top-item whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+            <strong>+91 9840033004</strong>
+          </div>
+
+          <div class="top-item email">
+            <i class="fa-solid fa-envelope"></i>
+            <span>7horsestravels@gmail.com</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT : SOCIAL ICONS -->
+      <div class="col-lg-2 col-md-12 text-lg-end text-center social-icons">
+        <a href="https://www.facebook.com/share/18HyXe6Qe2/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sevenhorsestoursandtravels?igsh=MTBjcm4yaTdkNXIwbw=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================= NAVBAR START ================= -->
+<nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a href="index.html" class="navbar-brand">
+      <img src="images/main.png" width="90" alt="Logo">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+
+      <ul class="navbar-nav align-items-center">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- Desktop Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="carrental.html">Car Rental</a></li>
+            <li><a class="dropdown-item" href="vanrental.html">Van Rental</a></li>
+            <li><a class="dropdown-item" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="dropdown-item" href="busrental.html">Bus Rental</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="packagetours.html">Package Tour</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Package</a></li>
+        <li class="nav-item"><a class="nav-link" href="tariff.html">Tariff</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- ================= NAVBAR START ================= -->
+<!-- ================= MOBILE SIDEBAR ================= -->
+<div class="offcanvas offcanvas-start" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5>7Horses</h5>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+      <!-- Mobile Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link d-flex justify-content-between align-items-center"
+           data-bs-toggle="collapse"
+           href="#mobileServicesMenu">
+          Services
+          <span class="bi bi-chevron-down"></span>
+        </a>
+
+        <div class="collapse ps-3" id="mobileServicesMenu">
+          <ul class="list-unstyled">
+            <li><a class="nav-link" href="carrental.html">Car Rental</a></li>
+            <li><a class="nav-link" href="vanrental.html">Van Rental</a></li>
+            <li><a class="nav-link" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="nav-link" href="busrental.html">Bus Rental</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="packagetours.html">Package Tour</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Packages</a></li>
+      <li class="nav-item"><a class="nav-link" href="tariff.html">Tariff</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+<section class="uh-banner-wrapper">
+  <div class="uh-banner-overlay">
+    <div class="container">
+      <div class="uh-banner-content text-center">
+
+        <h1 class="uh-banner-title">
+          Tariff
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="tariff-section py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Chennai Tariff</h2>
+
+    <div class="table-responsive">
+      <table class="table tariff-table align-middle text-center">
+        <thead>
+          <tr>
+            <th>Car Category</th>
+            <th>Vehicle</th>
+            <th>5 Hrs / 50 Kms</th>
+            <th>10 Hrs / 100 Kms</th>
+            <th>Extra Hr</th>
+            <th>Extra Km</th>
+            <th>Per Day Rent</th>
+            <th>Outstation Min KM</th>
+            <th>Outstation / KM</th>
+            <th>Driver Allowance</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Sedan</td>
+            <td class="fw-semibold">Dzire / Etios</td>
+            <td>₹1,400</td>
+            <td>₹2,800</td>
+            <td>₹280</td>
+            <td>₹14</td>
+            <td class="text-success fw-bold">₹3,500</td>
+            <td>250</td>
+            <td>₹14</td>
+            <td>₹500</td>
+          </tr>
+
+          <tr>
+            <td>Premium Sedan</td>
+            <td class="fw-semibold">Ciaz</td>
+            <td>₹1,600</td>
+            <td>₹3,200</td>
+            <td>₹320</td>
+            <td>₹16</td>
+            <td class="text-success fw-bold">₹4,000</td>
+            <td>250</td>
+            <td>₹16</td>
+            <td>₹600</td>
+          </tr>
+
+          <tr>
+            <td>SUV (7 Seater)</td>
+            <td class="fw-semibold">Innova Crysta</td>
+            <td>₹2,500</td>
+            <td>₹5,000</td>
+            <td>₹500</td>
+            <td>₹22</td>
+            <td class="text-success fw-bold">₹5,500</td>
+            <td>250</td>
+            <td>₹22</td>
+            <td>₹700</td>
+          </tr>
+
+          <tr>
+            <td>Tempo Traveller</td>
+            <td class="fw-semibold">12+1</td>
+            <td>₹2,500</td>
+            <td>₹5,000</td>
+            <td>₹500</td>
+            <td>₹22</td>
+            <td>-</td>
+            <td>250</td>
+            <td>₹21</td>
+            <td>₹700</td>
+          </tr>
+
+          <tr>
+            <td>Tempo Traveller</td>
+            <td class="fw-semibold">18+1</td>
+            <td>₹3,500</td>
+            <td>₹7,000</td>
+            <td>₹875</td>
+            <td>₹25</td>
+            <td>-</td>
+            <td>250</td>
+            <td>₹25</td>
+            <td>₹800</td>
+          </tr>
+
+          <tr>
+            <td>Mini Coach</td>
+            <td class="fw-semibold">22+1</td>
+            <td>-</td>
+            <td>₹10,000</td>
+            <td>₹1,000</td>
+            <td>₹35</td>
+            <td class="text-success fw-bold">₹10,500</td>
+            <td>200</td>
+            <td>₹35</td>
+            <td>₹1,000</td>
+          </tr>
+
+          <tr>
+            <td>Executive Coach</td>
+            <td class="fw-semibold">36+1</td>
+            <td>-</td>
+            <td>₹14,000</td>
+            <td>₹1,500</td>
+            <td>₹65</td>
+            <td class="text-success fw-bold">₹14,000</td>
+            <td>200</td>
+            <td>₹65</td>
+            <td>₹1,000</td>
+          </tr>
+
+          <tr>
+            <td>VOLVO</td>
+            <td class="fw-semibold">45+1</td>
+            <td>-</td>
+            <td>₹20,000</td>
+            <td>₹2,000</td>
+            <td>₹100</td>
+            <td class="text-success fw-bold">₹20,000</td>
+            <td>200</td>
+            <td>₹100</td>
+            <td>₹1,000</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- LOGO & ABOUT -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <img src="images/main.png" width="120px" alt="7Horses Logo">
+          <p>
+            7Horses Cab Services provides safe, reliable and comfortable cab
+            services for airport transfers, corporate travel, outstation
+            journeys and local city rides.
+          </p>
+
+          <!-- SOCIAL ICONS -->
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/18HyXe6Qe2/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sevenhorsestoursandtravels?igsh=MTBjcm4yaTdkNXIwbw=="><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Our Services</h5>
+        <ul class="footer-links">
+          <li><a href="carrental.html">Car Rental</a></li>
+          <li><a href="vanrental.html">Van Rental</a></li>
+          <li><a href="busrental.html">Bus Rental</a></li>
+          <li><a href="luxurycar.html">Luxury Car Rental</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact Us</h5>
+        <ul class="footer-contact">
+          <li>
+            <i class="bi bi-geo-alt"></i>
+            <span>
+              No 13 A/209, Ground Floor, Kaashyab Enclave, Velachery Main Road, Near Guru Nanak College, Velachery, Chennai – 600042.
+            </span>
+          </li>
+          <li>
+            <i class="bi bi-telephone"></i>
+            <a href="tel:+919822979797">+91 9543863532</a>
+          </li>
+          <li>
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:info@7horsescab.com">7horsestravels@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <div class="container text-center">
+      <p>
+        © 2026 <strong>7Horses Cab Services</strong>. All Rights Reserved. Designed By <a href="https://www.techmayon.com/" style="text-decoration: none;color: white;">Tech Mayon</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- FLOATING ACTION BUTTONS -->
+<!-- FLOATING ACTION BUTTONS -->
+<div class="uh-float-actions">
+
+  <!-- PHONE CALL -->
+  <a
+    href="tel:+919543863532"
+    class="uh-phone-btn"
+    aria-label="Call Us"
+  >
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+
+  <!-- WHATSAPP -->
+  <a
+    href="https://wa.me/919543863532?text=Hello%2C%20I%20would%20like%20to%20book%20a%20cab"
+    target="_blank"
+    class="uh-whatsapp-btn"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- SCROLL TO TOP -->
+  <button
+    class="uh-scrolltop-btn"
+    id="uhScrollTopBtn"
+    aria-label="Scroll to top"
+  >
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+</div>
+
+
+<script>
+  const scrollBtn = document.getElementById("uhScrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("uhPreloaderV2");
+    preloader.classList.add("hide");
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

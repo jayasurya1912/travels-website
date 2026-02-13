@@ -10,16 +10,13 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    .top-bar {
+/* ===== MOBILE VIEW FIX ===== */
+/* ===== TOP BAR ===== */
+.top-bar {
   background-color: #0B1D3A;
   color: #fff;
   font-size: 15px;
-  padding: 5px;
-}
-
-/* LOGO */
-.top-logo img {
-  max-height: 140px;
+  padding: 6px 10px;
 }
 
 /* CONTACT CENTER */
@@ -32,12 +29,22 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 20px;
+  padding: 10px 18px;
   border-right: 1px solid #444;
 }
 
 .top-item:last-child {
   border-right: none;
+}
+
+/* LINKS */
+.top-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-item a:hover {
+  color: #25d366;
 }
 
 /* ICON COLORS */
@@ -48,12 +55,12 @@
 
 .whatsapp i {
   color: #25d366;
-   font-size: 25px;
+  font-size: 22px;
 }
 
 .email i {
   color: #ff3b3b;
-   font-size: 18px;
+  font-size: 18px;
 }
 
 /* SOCIAL ICONS */
@@ -62,219 +69,152 @@
   color: #fff;
   font-size: 17px;
   text-decoration: none;
-  padding-right: 15px;
-  border-right: solid 1px white;
+  padding-right: 12px;
+  border-right: 1px solid #fff;
+}
+
+.social-icons a:last-child {
+  border-right: none;
 }
 
 .social-icons a:hover {
   color: #25d366;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== TABLET ===== */
 @media (max-width: 991px) {
   .top-item {
     border-right: none;
   }
 }
 
+/* ===== MOBILE VIEW FIX ===== */
 @media (max-width: 767px) {
-  .top-bar {
-    text-align: center;
+
+  /* Left align & stack */
+  .contact-center {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-direction: column;
   }
 
-  .top-logo,
+  .top-item {
+    width: 100%;
+    padding: 6px 0;
+    justify-content: flex-start;
+  }
+
+  /* Hide social icons */
   .social-icons {
-    margin-bottom: 8px;
+    display: none !important;
   }
-}
 
-    /* HERO BANNER */
-    .hero-banner {
-      min-height: 100vh;
-      background: linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
-        ),
-        url("images/wb-0-10.png");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-    }
-
-    .hero-title {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1.25rem;
-      color: #e5e5e5;
-      margin-bottom: 2rem;
-    }
-
-    .hero-btn {
-      padding: 14px 36px;
-      font-size: 1.1rem;
-      border-radius: 50px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 992px) {
-      .hero-title {
-        font-size: 2.5rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .hero-title {
-        font-size: 2.1rem;
-      }
-
-      .hero-subtitle {
-        font-size: 1.05rem;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .hero-title {
-        font-size: 1.8rem;
-      }
-
-      .hero-subtitle {
-        font-size: 1rem;
-      }
-    }
-    /* NAVBAR */
-.main-navbar {
-      background: #fff;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-      overflow-x: hidden;
-    }
-
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-    }
-
-    .navbar-brand img {
-      max-width: 120px;
-      height: auto;
-    }
-
-    /* =========================
-       NAV LINKS
-    ========================== */
-    .nav-link {
-      font-weight: 600;
-      color: #0b1d3a !important;
-      padding: 0px 26px !important;
-      letter-spacing: 0.3px;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-    
-
-    .nav-link.active,
-    .nav-link:hover {
-      color: #0369a1 !important;
-    }
-
-    /* =========================
-       CONTACT INFO
-    ========================== */
-    .navbar-contact {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      font-weight: 600;
-    }
-
-    .navbar-contact a {
-      text-decoration: none;
-      color: #0B1D3A;
-      white-space: nowrap;
-    }
-
-    .navbar-contact a:hover {
-      color: #00BAFF;
-    }
-@media (max-width: 1250px) {
-
-  /* Reduce nav link spacing */
-  .nav-link {
-    padding: 16px 12px !important;
+  /* Smaller text */
+  .top-bar span,
+  .top-bar strong,
+  .top-bar a {
     font-size: 14px;
   }
+}
 
-  /* Reduce contact text size */
-  .navbar-contact {
-    gap: 12px;
-    font-size: 13px;
+
+    /* HERO BANNER */
+   .hero-banner {
+  width: 100%;
+  min-height: 100svh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("images/wb-0-10.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width:550px)
+{
+  .hero-banner
+  {
+    width: 100%;
+  min-height: 50svh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("images/wb-0-10.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
   }
+}
+    /* NAVBAR */
+ .main-navbar {
+  position: relative;
+  z-index: 999;
+}
 
-  .navbar-contact i {
-    font-size: 18px !important;
+.navbar-brand img {
+  max-width: 120px;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #0b1d3a !important;
+  padding: 0 18px !important;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #0369a1 !important;
+}
+
+/* Dropdown Design */
+.dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  min-width: 220px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  animation: fadeDown 0.25s ease;
+}
+
+.dropdown-item:hover {
+  background: #f0f9ff;
+  color: #0369a1;
+}
+
+/* Animation */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
   }
-
-  /* Slightly reduce logo */
-  .navbar-brand img {
-    max-width: 180px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-    /* =========================
-       OFFCANVAS (MOBILE)
-    ========================== */
-    .offcanvas {
-      width: 280px;
-    }
+/* Mobile */
+.offcanvas {
+  width: 280px;
+}
 
-    .offcanvas .nav-link {
-      padding: 12px 0 !important;
-      font-size: 16px;
-    }
+.offcanvas .nav-link {
+  padding: 12px 0 !important;
+}
 
-    /* =========================
-       RESPONSIVE FIXES
-    ========================== */
 
-    /* Large screens down */
-    @media (max-width: 1200px) {
-      .nav-link {
-        padding: 18px 14px !important;
-      }
-    }
 
-    /* Tablets & Mobile */
-    @media (max-width: 991px) {
-      .navbar-contact {
-        display: none;
-      }
 
-      .navbar-brand img {
-        max-width: 160px;
-      }
-
-      .navbar {
-        padding: 10px 0;
-      }
-    }
-
-    /* Small mobiles */
-    @media (max-width: 550px) {
-      .navbar-brand img {
-        max-width: 140px;
-      }
-
-      .navbar-toggler {
-        padding: 4px 6px;
-      }
-    }
     .hero-title::after {
   content: "|";
   margin-left: 6px;
@@ -430,6 +370,7 @@
     font-size: 0.95rem;
   }
 }
+
 /* ===== ALT MARQUEE SECTION ===== */
 .marquee-alt-section {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -841,6 +782,12 @@
   .trust-title {
     font-size: 2rem;
   }
+  .trust-box p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  text-align: start;
+}
 }
 /* SECTION */
 .offer-exact-section {
@@ -1228,7 +1175,7 @@
 /* IMAGE */
 .gallery-item img {
   width: 100%;
-  height: 260px;
+  height: 300px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -2590,5 +2537,220 @@ textarea.form-control {
 
   .uh-road-line {
     width: 160px;
+  }
+}
+/* ===== Section Spacing ===== */
+.car-rental-section {
+    overflow: hidden;
+}
+
+/* ===== Image Wrapper Fix ===== */
+.car-rental-section .position-relative {
+    padding: 40px 40px 80px 0;
+}
+
+/* ===== Main Image ===== */
+.main-img {
+    width: 85%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    animation: floatMain 4s ease-in-out infinite;
+}
+
+/* ===== Small Image ===== */
+.small-img {
+    position: absolute;
+    width: 55%;
+    bottom: 0;
+    right: 0;
+    border: 6px solid #fff;
+    border-radius: 20px;
+    z-index: 3;
+    animation: floatSmall 5s ease-in-out infinite;
+}
+
+/* ===== Smooth Hover ===== */
+.main-img:hover,
+.small-img:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+
+/* ===== Floating Keyframe Animation ===== */
+@keyframes floatMain {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes floatSmall {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ===== Responsive Fix ===== */
+@media (max-width: 991px) {
+
+    .car-rental-section .position-relative {
+        padding: 0;
+    }
+
+    .main-img {
+        width: 100%;
+        animation: none;
+    }
+
+    .small-img {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        animation: none;
+    }
+}
+/* Section Background */
+.pricing-section {
+    background: linear-gradient(135deg, #f0f7ff, #ffffff);
+}
+
+/* Table Wrapper */
+.custom-wrapper {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Table */
+.custom-table {
+    margin: 0;
+    background: #ffffff;
+}
+
+/* Header */
+.custom-table thead {
+    background: linear-gradient(135deg, #0d6efd, #00c6ff);
+    color: #fff;
+}
+
+.custom-table thead th {
+    font-weight: 600;
+    padding: 18px;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Body */
+.custom-table tbody td {
+    padding: 18px 14px;
+    font-size: 15px;
+    border-top: 1px solid #f2f2f2;
+}
+
+/* Car Name Styling */
+.car-name {
+    font-weight: 700;
+    color: #0d6efd;
+    font-size: 16px;
+}
+
+/* Price Highlight */
+.price {
+    font-weight: 600;
+    color: #198754;
+}
+
+/* Outstation Highlight */
+.highlight-price {
+    font-weight: 700;
+    color: #dc3545;
+}
+
+/* Hover Effect */
+.custom-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+    background: #eaf4ff;
+    transform: scale(1.01);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .custom-table thead th {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .custom-table tbody td {
+        font-size: 13px;
+    }
+}
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+}
+.uh-bus-wrapper {
+  background: url("images/vovlvo.jpg")
+    center / cover no-repeat;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+}
+.uh-van-wrapper {
+  background: url("images/ur.jpg")
+    center / cover no-repeat;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+}
+.uh-lux-wrapper {
+  background: url("images/ben.jpg")
+    center / cover no-repeat;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+}
+.tariff-section {
+  background: #f8fbff;
+}
+
+.tariff-table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tariff-table thead {
+  background: #0B1D3A;
+  color: #fff;
+  font-size: 15px;
+}
+
+.tariff-table tbody tr {
+  transition: 0.3s;
+}
+
+.tariff-table tbody tr:hover {
+  background: #f1f7ff;
+}
+
+.tariff-table td,
+.tariff-table th {
+  padding: 14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .tariff-table {
+    font-size: 13px;
   }
 }

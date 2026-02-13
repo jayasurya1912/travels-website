@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Van Rental</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="uh-preloader-v2" id="uhPreloaderV2">
+  <div class="uh-preloader-inner">
+
+    <div class="uh-road-line"></div>
+
+    <h1 class="uh-preloader-brand">
+      7 <span>Horses</span>
+    </h1>
+
+    <p class="uh-preloader-sub">
+      Premium Cab Services
+    </p>
+
+  </div>
+</div>
+
+
+    <!-- ================= TOP BAR START ================= -->
+<section class="top-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <!-- LEFT : LOGO -->
+      
+
+      <!-- CENTER : CALL | WHATSAPP | EMAIL -->
+      <div class="col-lg-8 col-md-12">
+        <div class="contact-center d-flex justify-content-center align-items-center flex-wrap">
+
+          <div class="top-item call">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call</span>
+            <strong>+91 9543863532</strong>
+          </div>
+
+          <div class="top-item whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+            <strong>+91 9840033004</strong>
+          </div>
+
+          <div class="top-item email">
+            <i class="fa-solid fa-envelope"></i>
+            <span>7horsestravels@gmail.com</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT : SOCIAL ICONS -->
+      <div class="col-lg-2 col-md-12 text-lg-end text-center social-icons">
+        <a href="https://www.facebook.com/share/18HyXe6Qe2/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sevenhorsestoursandtravels?igsh=MTBjcm4yaTdkNXIwbw=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= NAVBAR START ================= -->
+ <nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container">
+
+    <!-- Mobile Toggle -->
+    
+
+    <!-- Logo -->
+    
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between">
+      <a href="" class="navbar-brand">
+        <img src="images/main.png" width="90px" alt="">
+      </a>
+
+      <!-- Center Menu -->
+      <ul class="navbar-nav align-items-center mx-auto">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown"
+     role="button" data-bs-toggle="dropdown" aria-expanded="false">
+     Service
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+    <li><a class="dropdown-item" href="carrental.html">Car Rental</a></li>
+    <li><a class="dropdown-item" href="vanrental.html">Van Rental</a></li>
+    <li><a class="dropdown-item" href="luxurycar.html">Luxury Car Rental</a></li>
+    <li><a class="dropdown-item" href="busrental.html">Bus Rental</a></li>
+  </ul>
+</li>
+
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="packagetours.html">Package Tour</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="tariff.html">Tariff</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        
+      </ul>
+
+      <!-- Contact Info (Right) -->
+      
+
+    </div>
+
+    <a href="" class="navbar-brand d-lg-none">
+  <img src="images/main.png" width="90" alt="Logo">
+</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  
+</nav>
+
+
+<!-- Mobile Sidebar -->
+<div class="offcanvas offcanvas-start" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5>7Horses</h5>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+      <!-- Mobile Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link d-flex justify-content-between align-items-center"
+           data-bs-toggle="collapse"
+           href="#mobileServicesMenu">
+          Services
+          <span class="bi bi-chevron-down"></span>
+        </a>
+
+        <div class="collapse ps-3" id="mobileServicesMenu">
+          <ul class="list-unstyled">
+            <li><a class="nav-link" href="carrental.html">Car Rental</a></li>
+            <li><a class="nav-link" href="vanrental.html">Van Rental</a></li>
+            <li><a class="nav-link" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="nav-link" href="busrental.html">Bus Rental</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="packagetours.html">Package Tour</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Package</a></li>
+      <li class="nav-item"><a class="nav-link" href="tariff.html">Tariff</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+    </ul>
+  </div>
+</div>
+
+<section class="uh-van-wrapper">
+  <div class="uh-banner-overlay">
+    <div class="container">
+      <div class="uh-banner-content text-center">
+
+        <h1 class="uh-banner-title">
+          Van Rental
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="car-rental-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side Image -->
+      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+
+  <!-- Main Image -->
+  <img src="images/gallfour.jpeg"
+       class="img-fluid rounded-4 shadow main-img"
+       alt="Swift Dzire Rental">
+
+  <!-- Small Overlapping Image -->
+  <img src="images/gallfive.jpeg"
+       class="img-fluid rounded-4 shadow small-img"
+       alt="Swift Dzire Side View">
+
+</div>
+
+
+      <!-- Right Side Content -->
+      <div class="col-lg-6">
+       <h2 class="fw-bold mb-3">
+  Tempo Traveller Rental in Chennai: <br>
+  <span class="text-primary">Comfortable & Spacious Group Travel</span>
+</h2>
+
+<p class="text-muted mb-4">
+  Plan your group trips with ease using our Tempo Traveller rental services in Chennai. 
+  Ideal for family tours, corporate outings, pilgrimages, weddings, and outstation travel, 
+  our Tempo Travellers offer spacious seating, ample luggage space, and a smooth ride 
+  to ensure a comfortable journey for everyone.
+</p>
+
+<ul class="list-unstyled mb-4">
+  <li class="mb-2">✔ 12 / 14 / 17-Seater Options Available</li>
+  <li class="mb-2">✔ Perfect for Family & Group Trips</li>
+  <li class="mb-2">✔ Experienced & Professional Drivers</li>
+  <li class="mb-2">✔ Available for Local & Outstation Travel</li>
+</ul>
+
+
+        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill">
+          Book Now
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section py-5">
+
+    <h2 style="text-align: center;margin-bottom: 1.5rem;"><span class="text-primary">Tempo Traveller</span> Van Rental Tariff in Chennai</h2>
+  <div class="container">
+
+    <div class="table-responsive custom-wrapper">
+     <table class="table custom-table align-middle text-center">
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Seaters</th>
+      <th>5 Hrs / 50 Kms</th>
+      <th>10 Hrs / 100 Kms</th>
+      <th>Local Extra / KM</th>
+      <th>Local Extra / Hr</th>
+      <th>Outstation (Min 250KM)</th>
+      <th>Outstation Add / KM</th>
+      <th>Driver Batta / Day</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td class="car-name">Tempo Traveller</td>
+      <td>12</td>
+      <td class="price">₹3,000</td>
+      <td class="price">₹6,000</td>
+      <td>₹22</td>
+      <td>₹650</td>
+      <td class="highlight-price">₹5,500</td>
+      <td>₹22</td>
+      <td>₹700</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Tempo Traveller</td>
+      <td>13</td>
+      <td class="price">₹3,000</td>
+      <td class="price">₹6,000</td>
+      <td>₹22</td>
+      <td>₹650</td>
+      <td class="highlight-price">₹5,500</td>
+      <td>₹22</td>
+      <td>₹700</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Luxury Tempo Traveller</td>
+      <td>14</td>
+      <td class="price">₹3,000</td>
+      <td class="price">₹6,000</td>
+      <td>₹25</td>
+      <td>₹750</td>
+      <td class="highlight-price">₹7,500</td>
+      <td>₹25</td>
+      <td>₹700</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Tempo Traveller</td>
+      <td>18</td>
+      <td class="price">₹4,000</td>
+      <td class="price">₹8,000</td>
+      <td>₹30</td>
+      <td>₹750</td>
+      <td class="highlight-price">₹7,800</td>
+      <td>₹26</td>
+      <td>₹800</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="car-rental-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side Image -->
+      
+
+
+      <!-- Right Side Content -->
+      <div class="col-lg-6">
+       <h2 class="fw-bold mb-3">
+        Urbania Rental in Chennai: <br>
+        <span class="text-primary">Premium Group Travel with Ultimate Comfort</span>
+        </h2>
+
+        <p class="text-muted mb-4">
+        Travel in style and comfort with our Urbania rental services in Chennai. 
+        Perfect for corporate tours, family vacations, pilgrimages, airport transfers, 
+        and long-distance trips, the Urbania offers luxurious seating, spacious interiors, 
+        advanced safety features, and a smooth ride for a premium group travel experience.
+        </p>
+
+        <ul class="list-unstyled mb-4">
+        <li class="mb-2">✔ Spacious 12 / 15-Seater Luxury Van</li>
+        <li class="mb-2">✔ Premium Interiors with Comfortable Seating</li>
+        <li class="mb-2">✔ Ideal for Corporate & Family Group Travel</li>
+        <li class="mb-2">✔ Available for Local & Outstation Trips</li>
+        </ul>
+
+
+
+        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill">
+          Book Now
+        </a>
+      </div>
+
+
+      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+
+  <!-- Main Image -->
+  <img src="images/ur.jpg"
+       class="img-fluid rounded-4 shadow main-img"
+       alt="Swift Dzire Rental">
+
+  <!-- Small Overlapping Image -->
+  <img src="images/urtwo.jpg"
+       class="img-fluid rounded-4 shadow small-img"
+       alt="Swift Dzire Side View">
+
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="pricing-section py-5">
+
+    <h2 style="text-align: center;margin-bottom: 1.5rem;"><span class="text-primary">Urbania </span> Van Rental Tariff in Chennai</h2>
+  <div class="container">
+
+    <div class="table-responsive custom-wrapper">
+     <table class="table custom-table align-middle text-center">
+
+  <thead>
+    <tr>
+      <th>Car Type</th>
+      <th>Pickup - Drop</th>
+      <th>10 Hrs / 100 Kms</th>
+      <th>15 Hrs / 150 Kms</th>
+      <th>Additional Hrs</th>
+      <th>Additional Kms</th>
+      <th>Outstation (Min 250KM)</th>
+      <th>Outstation Add / KM</th>
+      <th>Driver Batta / Day</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td class="car-name">Urbania 12+1</td>
+      <td class="price">₹4,000</td>
+      <td class="price">₹8,000</td>
+      <td class="price">₹12,000</td>
+      <td>₹1,000</td>
+      <td>₹38</td>
+      <td class="highlight-price">₹9,500</td>
+      <td>₹38</td>
+      <td>₹1,000</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Urbania 17+1</td>
+      <td class="price">₹5,000</td>
+      <td class="price">₹10,000</td>
+      <td class="price">₹15,000</td>
+      <td>₹1,200</td>
+      <td>₹40</td>
+      <td class="highlight-price">₹10,000</td>
+      <td>₹40</td>
+      <td>₹1,000</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<section class="car-rental-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side Image -->
+      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+
+  <!-- Main Image -->
+  <img src="images/mah.jpeg"
+       class="img-fluid rounded-4 shadow main-img"
+       alt="Swift Dzire Rental">
+
+  <!-- Small Overlapping Image -->
+  <img src="images/mahone.webp"
+       class="img-fluid rounded-4 shadow small-img"
+       alt="Swift Dzire Side View">
+
+</div>
+
+
+      <!-- Right Side Content -->
+      <div class="col-lg-6">
+      <h2 class="fw-bold mb-3">
+        Mahindra Tourister Van Rental in Chennai: <br>
+        <span class="text-primary">Reliable & Comfortable Group Travel</span>
+        </h2>
+
+        <p class="text-muted mb-4">
+        Travel comfortably with our Mahindra Tourister Van rental services in Chennai. 
+        Ideal for family functions, corporate travel, school trips, pilgrimages, and 
+        outstation journeys, the Tourister offers spacious seating, strong performance, 
+        and a smooth ride for a safe and enjoyable group travel experience.
+        </p>
+
+        <ul class="list-unstyled mb-4">
+        <li class="mb-2">✔ Spacious 9 / 12 / 13-Seater Options</li>
+        <li class="mb-2">✔ Perfect for Group & Family Travel</li>
+        <li class="mb-2">✔ Professional & Experienced Drivers</li>
+        <li class="mb-2">✔ Available for Local & Outstation Trips</li>
+        </ul>
+
+
+
+        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill">
+          Book Now
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section py-5">
+
+    <h2 style="text-align: center;margin-bottom: 1.5rem;"><span class="text-primary">Mahindra Tourister </span> Van Rental Tariff in Chennai</h2>
+  <div class="container">
+
+    <div class="table-responsive custom-wrapper">
+    <table class="table custom-table align-middle text-center">
+
+  <thead>
+    <tr>
+      <th>Van Type</th>
+      <th>Seaters</th>
+      <th>5 Hrs / 50 Kms</th>
+      <th>10 Hrs / 100 Kms</th>
+      <th>15 Hrs / 150 Kms</th>
+      <th>Additional Kms</th>
+      <th>Additional Hrs</th>
+      <th>Outstation (Min 250KM)</th>
+      <th>Outstation Add / KM</th>
+      <th>Driver Batta / Day</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td class="car-name">Mahindra Tourister (Non-AC)</td>
+      <td>16</td>
+      <td class="price">₹3,000</td>
+      <td class="price">₹6,000</td>
+      <td class="price">₹9,000</td>
+      <td>₹20</td>
+      <td>₹750</td>
+      <td class="highlight-price">₹5,000</td>
+      <td>₹20</td>
+      <td>₹700</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="car-rental-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side Image -->
+      
+
+
+      <!-- Right Side Content -->
+      <div class="col-lg-6">
+      <h2 class="fw-bold mb-3">
+  14 Seater Tempo Traveller Rental in Chennai: <br>
+  <span class="text-primary">Comfortable & Convenient Group Travel</span>
+</h2>
+
+<p class="text-muted mb-4">
+  Make your group journeys smooth and enjoyable with our 14 Seater Tempo Traveller rental services in Chennai. 
+  Ideal for family trips, corporate outings, temple visits, airport transfers, and outstation travel, 
+  this spacious vehicle offers comfortable pushback seating, ample luggage space, and a relaxing ride 
+  for every passenger.
+</p>
+
+<ul class="list-unstyled mb-4">
+  <li class="mb-2">✔ Spacious 14-Seater with Pushback Seats</li>
+  <li class="mb-2">✔ Perfect for Family & Corporate Group Trips</li>
+  <li class="mb-2">✔ Experienced & Professional Drivers</li>
+  <li class="mb-2">✔ Available for Local & Outstation Travel</li>
+</ul>
+
+
+
+
+        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill">
+          Book Now
+        </a>
+      </div>
+
+
+      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+
+  <!-- Main Image -->
+  <img src="images/gallfour.jpeg"
+       class="img-fluid rounded-4 shadow main-img"
+       alt="Swift Dzire Rental">
+
+  <!-- Small Overlapping Image -->
+  <img src="images/gallfive.jpeg"
+       class="img-fluid rounded-4 shadow small-img"
+       alt="Swift Dzire Side View">
+
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="pricing-section py-5">
+
+    <h2 style="text-align: center;margin-bottom: 1.5rem;"><span class="text-primary">14 Seater Tempo </span> Van Rental Tariff in Chennai</h2>
+  <div class="container">
+
+    <div class="table-responsive custom-wrapper">
+    <table class="table custom-table align-middle text-center">
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Seaters</th>
+      <th>5 Hrs / 50 Kms</th>
+      <th>10 Hrs / 100 Kms</th>
+      <th>Local Extra / KM</th>
+      <th>Local Extra / Hr</th>
+      <th>Outstation (Min 250KM)</th>
+      <th>Outstation Add / KM</th>
+      <th>Driver Batta / Day</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td class="car-name">Tempo Traveller</td>
+      <td>12</td>
+      <td class="price">₹3,000</td>
+      <td class="price">₹6,000</td>
+      <td>₹22</td>
+      <td>₹650</td>
+      <td class="highlight-price">₹5,500</td>
+      <td>₹22</td>
+      <td>₹700</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Tempo Traveller</td>
+      <td>13</td>
+      <td class="price">₹3,000</td>
+      <td class="price">₹6,000</td>
+      <td>₹22</td>
+      <td>₹650</td>
+      <td class="highlight-price">₹5,500</td>
+      <td>₹22</td>
+      <td>₹700</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Luxury Tempo Traveller</td>
+      <td>14</td>
+      <td class="price">₹3,000</td>
+      <td class="price">₹6,000</td>
+      <td>₹25</td>
+      <td>₹750</td>
+      <td class="highlight-price">₹7,500</td>
+      <td>₹25</td>
+      <td>₹700</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Tempo Traveller</td>
+      <td>18</td>
+      <td class="price">₹4,000</td>
+      <td class="price">₹8,000</td>
+      <td>₹30</td>
+      <td>₹750</td>
+      <td class="highlight-price">₹7,800</td>
+      <td>₹26</td>
+      <td>₹800</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="car-rental-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side Image -->
+      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+
+  <!-- Main Image -->
+  <img src="images/gallfive.jpeg"
+       class="img-fluid rounded-4 shadow main-img"
+       alt="Swift Dzire Rental">
+
+  <!-- Small Overlapping Image -->
+  <img src="images/gallfour.jpeg"
+       class="img-fluid rounded-4 shadow small-img"
+       alt="Swift Dzire Side View">
+
+</div>
+
+
+      <!-- Right Side Content -->
+      <div class="col-lg-6">
+     <h2 class="fw-bold mb-3">
+  16 Seater Van Rental in Chennai: <br>
+  <span class="text-primary">Spacious & Comfortable Group Travel</span>
+</h2>
+
+<p class="text-muted mb-4">
+  Travel together comfortably with our 16 Seater Van rental services in Chennai. 
+  Ideal for family outings, corporate events, school trips, pilgrimages, and 
+  outstation journeys, our spacious van ensures a smooth, safe, and enjoyable 
+  ride for every passenger with ample seating and luggage space.
+</p>
+
+<ul class="list-unstyled mb-4">
+  <li class="mb-2">✔ Spacious 16-Seater Comfortable Van</li>
+  <li class="mb-2">✔ Ideal for Family, Corporate & Group Trips</li>
+  <li class="mb-2">✔ Experienced & Professional Drivers</li>
+  <li class="mb-2">✔ Available for Local & Outstation Travel</li>
+</ul>
+
+
+
+
+        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill">
+          Book Now
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section py-5">
+
+    <h2 style="text-align: center;margin-bottom: 1.5rem;"><span class="text-primary">16 Seater</span> Van Rental Tariff in Chennai</h2>
+  <div class="container">
+
+    <div class="table-responsive custom-wrapper">
+    <table class="table custom-table align-middle text-center">
+
+  <thead>
+    <tr>
+      <th>Van Type</th>
+      <th>Mahindra Tourister</th>
+      <th>Tata Marcopolo</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td class="car-name">10 Hrs / 100 Kms</td>
+      <td class="price">₹3,200</td>
+      <td class="price">₹3,200</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">15 Hrs / 150 Kms</td>
+      <td class="price">₹4,800</td>
+      <td class="price">₹4,800</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Outstation (Min 250 KM) / KM</td>
+      <td>₹16</td>
+      <td>₹16</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Driver Batta / Day</td>
+      <td>₹500</td>
+      <td>₹500</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Hill Station Round Trip</td>
+      <td>₹500</td>
+      <td>₹500</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="car-rental-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side Image -->
+      
+
+
+      <!-- Right Side Content -->
+      <div class="col-lg-6">
+      <h2 class="fw-bold mb-3">
+    17 Seater Van Rental in Chennai: <br>
+    <span class="text-primary">Spacious & Reliable Group Transportation</span>
+    </h2>
+
+    <p class="text-muted mb-4">
+    Enjoy comfortable and hassle-free group travel with our 17 Seater Van rental services in Chennai. 
+    Perfect for family tours, corporate outings, school trips, weddings, and outstation journeys, 
+    our well-maintained vans provide spacious seating, ample luggage capacity, and a smooth ride 
+    for a safe and enjoyable travel experience.
+    </p>
+
+    <ul class="list-unstyled mb-4">
+    <li class="mb-2">✔ Comfortable 17-Seater Spacious Van</li>
+    <li class="mb-2">✔ Ideal for Family, Corporate & Group Trips</li>
+    <li class="mb-2">✔ Professional & Experienced Drivers</li>
+    <li class="mb-2">✔ Available for Local & Outstation Travel</li>
+    </ul>
+
+
+
+
+
+        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill">
+          Book Now
+        </a>
+      </div>
+
+
+      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+
+  <!-- Main Image -->
+  <img src="images/gallfour.jpeg"
+       class="img-fluid rounded-4 shadow main-img"
+       alt="Swift Dzire Rental">
+
+  <!-- Small Overlapping Image -->
+  <img src="images/gallfive.jpeg"
+       class="img-fluid rounded-4 shadow small-img"
+       alt="Swift Dzire Side View">
+
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="pricing-section py-5">
+
+    <h2 style="text-align: center;margin-bottom: 1.5rem;"><span class="text-primary"> 17 Seater  </span> Van Rental Tariff in Chennai</h2>
+  <div class="container">
+
+    <div class="table-responsive custom-wrapper">
+    <table class="table custom-table align-middle text-center">
+
+  <thead>
+    <tr>
+      <th>Particulars</th>
+      <th>16 Seater</th>
+      <th>17 Seater (Mahindra Tourister - Non AC)</th>
+      <th>18 Seater</th>
+      <th>20 Seater (Pushback)</th>
+      <th>21 Seater (Pushback AC)</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td class="car-name">5 Hrs / 50 Kms</td>
+      <td>₹2,000</td>
+      <td>Non AC</td>
+      <td>Non AC</td>
+      <td>Non AC</td>
+      <td>AC</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">10 Hrs / 100 Kms</td>
+      <td>₹4,000</td>
+      <td>₹4,000</td>
+      <td>₹30 / KM</td>
+      <td>₹19 / KM</td>
+      <td>₹23 / KM</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">12 Hrs / 120 Kms</td>
+      <td>₹4,800</td>
+      <td>₹4,800</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">15 Hrs / 150 Kms</td>
+      <td>₹6,000</td>
+      <td>₹6,000</td>
+      <td>₹700</td>
+      <td>₹700</td>
+      <td>₹700</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Additional Per KM</td>
+      <td>₹20</td>
+      <td>₹20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">Additional Per Hour</td>
+      <td>₹400</td>
+      <td>₹400</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<section class="car-rental-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side Image -->
+      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+
+  <!-- Main Image -->
+  <img src="images/gallfive.jpeg"
+       class="img-fluid rounded-4 shadow main-img"
+       alt="Swift Dzire Rental">
+
+  <!-- Small Overlapping Image -->
+  <img src="images/gallfour.jpeg"
+       class="img-fluid rounded-4 shadow small-img"
+       alt="Swift Dzire Side View">
+
+</div>
+
+
+      <!-- Right Side Content -->
+      <div class="col-lg-6">
+     <h2 class="fw-bold mb-3">
+  18 Seater Van Rental in Chennai: <br>
+  <span class="text-primary">Comfortable & Spacious Travel for Large Groups</span>
+</h2>
+
+<p class="text-muted mb-4">
+  Enjoy hassle-free group travel with our 18 Seater Van rental services in Chennai. 
+  Perfect for family tours, corporate outings, school trips, weddings, and outstation journeys, 
+  our well-maintained vans provide ample seating space, comfortable interiors, and a smooth ride 
+  to ensure a safe and pleasant travel experience for everyone.
+</p>
+
+<ul class="list-unstyled mb-4">
+  <li class="mb-2">✔ Spacious 18-Seater with Comfortable Seating</li>
+  <li class="mb-2">✔ Ideal for Family, Corporate & Group Travel</li>
+  <li class="mb-2">✔ Professional & Experienced Drivers</li>
+  <li class="mb-2">✔ Available for Local & Outstation Trips</li>
+</ul>
+
+
+
+
+
+        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill">
+          Book Now
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section py-5">
+
+    <h2 style="text-align: center;margin-bottom: 1.5rem;"><span class="text-primary">18 Seater </span> Van Rental Tariff in Chennai</h2>
+  <div class="container">
+
+    <div class="table-responsive custom-wrapper">
+   <table class="table custom-table align-middle text-center">
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>5 Hrs / 50 Kms</th>
+      <th>10 Hrs / 100 Kms</th>
+      <th>Local Extra / KM</th>
+      <th>Local Extra / Hr</th>
+      <th>Outstation (Min 300 KM)</th>
+      <th>Outstation Add / KM</th>
+      <th>Driver Batta / Day</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td class="car-name">18+1 Tempo Traveller</td>
+      <td class="price">₹4,000</td>
+      <td class="price">₹8,000</td>
+      <td>₹28</td>
+      <td>₹750</td>
+      <td class="highlight-price">₹7,800</td>
+      <td>₹26</td>
+      <td>₹800</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="car-rental-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side Image -->
+      
+
+
+      <!-- Right Side Content -->
+      <div class="col-lg-6">
+      <h2 class="fw-bold mb-3">
+  20 Seater Van Rental in Chennai: <br>
+  <span class="text-primary">Spacious & Comfortable Travel for Large Groups</span>
+</h2>
+
+<p class="text-muted mb-4">
+  Plan your large group travel with ease using our 20 Seater Van rental services in Chennai. 
+  Ideal for corporate events, family functions, school trips, pilgrimages, weddings, and 
+  long-distance outstation journeys, our spacious vans ensure maximum comfort, safety, 
+  and a smooth ride for every passenger.
+</p>
+
+<ul class="list-unstyled mb-4">
+  <li class="mb-2">✔ Comfortable 20-Seater with Pushback Seating</li>
+  <li class="mb-2">✔ Perfect for Corporate, Family & Group Travel</li>
+  <li class="mb-2">✔ Experienced & Professional Drivers</li>
+  <li class="mb-2">✔ Available for Local & Outstation Trips</li>
+</ul>
+
+
+
+
+
+
+        <a href="contact.html" class="btn btn-primary px-4 py-2 rounded-pill">
+          Book Now
+        </a>
+      </div>
+
+
+      <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+
+  <!-- Main Image -->
+  <img src="images/gallfour.jpeg"
+       class="img-fluid rounded-4 shadow main-img"
+       alt="Swift Dzire Rental">
+
+  <!-- Small Overlapping Image -->
+  <img src="images/gallfive.jpeg"
+       class="img-fluid rounded-4 shadow small-img"
+       alt="Swift Dzire Side View">
+
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="pricing-section py-5">
+
+    <h2 style="text-align: center;margin-bottom: 1.5rem;"><span class="text-primary">20 Seater </span> Van Rental Tariff in Chennai</h2>
+  <div class="container">
+
+    <div class="table-responsive custom-wrapper">
+    <table class="table custom-table align-middle text-center">
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>10 Hrs / 100 Kms</th>
+      <th>Additional Kms</th>
+      <th>Additional Hrs</th>
+      <th>Outstation (Min 300 KM)</th>
+      <th>Outstation Per KM</th>
+      <th>Driver Batta / Day</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td class="car-name">21 Seater Mini Bus</td>
+      <td class="price">₹8,000</td>
+      <td>₹30</td>
+      <td>₹800</td>
+      <td class="highlight-price">₹8,400</td>
+      <td>₹28</td>
+      <td>₹800</td>
+    </tr>
+
+    <tr>
+      <td class="car-name">25 Seater Mini Bus</td>
+      <td class="price">₹9,900</td>
+      <td>₹35</td>
+      <td>₹900</td>
+      <td class="highlight-price">₹9,600</td>
+      <td>₹32</td>
+      <td>₹900</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- LOGO & ABOUT -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <img src="images/main.png" width="120px" alt="7Horses Logo">
+          <p>
+            7Horses Cab Services provides safe, reliable and comfortable cab
+            services for airport transfers, corporate travel, outstation
+            journeys and local city rides.
+          </p>
+
+          <!-- SOCIAL ICONS -->
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/18HyXe6Qe2/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sevenhorsestoursandtravels?igsh=MTBjcm4yaTdkNXIwbw=="><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Our Services</h5>
+        <ul class="footer-links">
+          <li><a href="carrental.html">Car Rental</a></li>
+          <li><a href="vanrental.html">Van Rental</a></li>
+          <li><a href="busrental.html">Bus Rental</a></li>
+          <li><a href="luxurycar.html">Luxury Car Rental</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact Us</h5>
+        <ul class="footer-contact">
+          <li>
+            <i class="bi bi-geo-alt"></i>
+            <span>
+              No 13 A/209, Ground Floor, Kaashyab Enclave, Velachery Main Road, Near Guru Nanak College, Velachery, Chennai – 600042.
+            </span>
+          </li>
+          <li>
+            <i class="bi bi-telephone"></i>
+            <a href="tel:+919822979797">+91 9543863532</a>
+          </li>
+          <li>
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:info@7horsescab.com">7horsestravels@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <div class="container text-center">
+      <p>
+        © 2026 <strong>7Horses Cab Services</strong>. All Rights Reserved. Designed By <a href="https://www.techmayon.com/" style="text-decoration: none;color: white;">Tech Mayon</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- FLOATING ACTION BUTTONS -->
+<!-- FLOATING ACTION BUTTONS -->
+<div class="uh-float-actions">
+
+  <!-- PHONE CALL -->
+  <a
+    href="tel:+919543863532"
+    class="uh-phone-btn"
+    aria-label="Call Us"
+  >
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+
+  <!-- WHATSAPP -->
+  <a
+    href="https://wa.me/919543863532?text=Hello%2C%20I%20would%20like%20to%20book%20a%20cab"
+    target="_blank"
+    class="uh-whatsapp-btn"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- SCROLL TO TOP -->
+  <button
+    class="uh-scrolltop-btn"
+    id="uhScrollTopBtn"
+    aria-label="Scroll to top"
+  >
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+</div>
+
+
+<script>
+  const scrollBtn = document.getElementById("uhScrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("uhPreloaderV2");
+    preloader.classList.add("hide");
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

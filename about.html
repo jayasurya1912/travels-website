@@ -83,62 +83,93 @@
  <nav class="navbar navbar-expand-lg main-navbar">
   <div class="container">
 
-    <!-- Mobile Toggle -->
-    
-
     <!-- Logo -->
-    
+    <a href="index.html" class="navbar-brand">
+      <img src="images/main.png" width="90" alt="Logo">
+    </a>
 
-    <!-- Desktop Menu -->
-    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between">
-      <a href="" class="navbar-brand">
-        <img src="images/main.png" width="90px" alt="">
-      </a>
-
-      <!-- Center Menu -->
-      <ul class="navbar-nav align-items-center mx-auto">
-        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-
-      <!-- Contact Info (Right) -->
-      
-
-    </div>
-
-    <a href="" class="navbar-brand d-lg-none">
-  <img src="images/main.png" width="90" alt="Logo">
-</a>
-
+    <!-- Mobile Toggle -->
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="offcanvas"
-      data-bs-target="#mobileMenu"
-    >
+      data-bs-target="#mobileMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+
+      <ul class="navbar-nav align-items-center">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- Desktop Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="carrental.html">Car Rental</a></li>
+            <li><a class="dropdown-item" href="vanrental.html">Van Rental</a></li>
+            <li><a class="dropdown-item" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="dropdown-item" href="busrental.html">Bus Rental</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="packagetours.html">Package Tour</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Packagess</a></li>
+        <li class="nav-item"><a class="nav-link" href="tariff.html">Tariff</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+
   </div>
-   
 </nav>
 
 
-<!-- Mobile Sidebar -->
+<!-- ================= NAVBAR START ================= -->
+<!-- ================= MOBILE SIDEBAR ================= -->
 <div class="offcanvas offcanvas-start" id="mobileMenu">
   <div class="offcanvas-header">
     <h5>7Horses</h5>
     <button class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
+
   <div class="offcanvas-body">
-     <ul class="navbar-nav">
+    <ul class="navbar-nav">
+
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+      <!-- Mobile Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link d-flex justify-content-between align-items-center"
+           data-bs-toggle="collapse"
+           href="#mobileServicesMenu">
+          Services
+          <span class="bi bi-chevron-down"></span>
+        </a>
+
+        <div class="collapse ps-3" id="mobileServicesMenu">
+          <ul class="list-unstyled">
+            <li><a class="nav-link" href="carrental.html">Car Rental</a></li>
+            <li><a class="nav-link" href="vanrental.html">Van Rental</a></li>
+            <li><a class="nav-link" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="nav-link" href="busrental.html">Bus Rental</a></li>
+          </ul>
+        </div>
+      </li>
+
       <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="packagetours.html">Package Tour</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Packages</a></li>
+      <li class="nav-item"><a class="nav-link" href="tariff">Tariff</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
     </ul>
   </div>
 </div>
@@ -416,10 +447,10 @@
       <div class="col-lg-3 col-md-6">
         <h5 class="footer-title">Our Services</h5>
         <ul class="footer-links">
-          <li><a href="#">Airport Transfers</a></li>
-          <li><a href="#">Corporate Car Rental</a></li>
-          <li><a href="#">Outstation Cabs</a></li>
-          <li><a href="#">Local City Cab</a></li>
+          <li><a href="carrental.html">Car Rental</a></li>
+          <li><a href="vanrental.html">Van Rental</a></li>
+          <li><a href="busrental.html">Bus Rental</a></li>
+          <li><a href="luxurycar.html">Luxury Car Rental</a></li>
         </ul>
       </div>
 
