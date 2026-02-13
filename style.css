@@ -1527,20 +1527,20 @@ textarea.form-control {
 @media (max-width: 768px) {
   .footer-brand,
   .footer-title {
-    text-align: center;
+    text-align: start;
   }
 
   .footer-social {
-    justify-content: center;
+    justify-content: start;
   }
 
   .footer-contact li {
-    justify-content: center;
-    text-align: center;
+    justify-content: start;
+    text-align: start;
   }
   .footer-links
   {
-    text-align: center;
+    text-align: start;
   }
 }
 /* ===== UNIQUE HERO BANNER ===== */
