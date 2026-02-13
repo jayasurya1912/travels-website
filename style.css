@@ -2719,6 +2719,35 @@ textarea.form-control {
   position: relative;
   display: flex;
 }
+@media(max-width:550px)
+{
+  .uh-lux-wrapper {
+  background: url("images/ben.jpg")
+    center / cover no-repeat;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+}
+.uh-bus-wrapper {
+  background: url("images/vovlvo.jpg")
+    center / cover no-repeat;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+}
+.uh-van-wrapper {
+  background: url("images/ur.jpg")
+    center / cover no-repeat;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+}
+.uh-banner-wrapper {
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+}
+}
 .tariff-section {
   background: #f8fbff;
 }
