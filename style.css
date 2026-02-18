@@ -2705,6 +2705,63 @@ textarea.form-control {
         font-size: 13px;
     }
 }
+/* Ensure table scrolls on small screens */
+.custom-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent text breaking layout */
+.custom-table th,
+.custom-table td {
+    white-space: nowrap;
+}
+
+/* Tablet View */
+@media (max-width: 991px) {
+
+    .custom-wrapper {
+        border-radius: 12px;
+    }
+
+    .custom-table thead th {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .custom-table tbody td {
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+
+    .car-name {
+        font-size: 14px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+
+    .custom-table {
+        font-size: 12px;
+        min-width: 600px; /* forces scroll instead of breaking */
+    }
+
+    .custom-table thead th {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .custom-table tbody td {
+        padding: 10px 8px;
+    }
+
+    .custom-wrapper {
+        box-shadow: none;
+    }
+}
+
 .card img {
   height: 220px;
   object-fit: cover;
